@@ -1,3 +1,12 @@
+Event Booking App -  Build by Nextjs and Firebase Integration
+
+
+Here's following Feature
+- authencation login users
+- complete CRUD functionality cloud firestore setup
+- route handlers then setup CRUD for rest apis to be used on frontend.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
