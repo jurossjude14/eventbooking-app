@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.container-width {
+  max-width: 1216px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  background: #f8f8f8;
+  margin-bottom: 30px;
+}
+
+.logo-cont {
+  margin-right: 50px;
+}
+
+footer {
+  border-radius: 0 !IMPORTANT;
+}
+
+footer * {
+  color: #fff;
+}
+
+.block-btn {
+  top: 20px;
+}
+
+main.container-wide {
+  margin-top: -35px !IMPORTANT;
+}
+
+.custom-bk-home {
+  background: #e9f0fc;
+  border-top: 1px solid #5850ec;
+}
+
+.feat-custom-set1 {
+  background:#f6f6f6;
+  }
+
+  .custom-sec-div1 {
+    padding-top: 10px;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.custom-sec-div1 {
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+article {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+img.profileImg {
+  border-radius: 30px;
+  border: 4px solid #fdfdfd;
+}
+
+.custom-title-time {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.prog-container {
+  max-width: 350px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.prog-label {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.bg-dark {
+  background: #2e2e2e;
+}
+
+.dash-content-top {
+  margin-top: 110px;
+}
+
+.dash-content-padding-top {
+  padding-top: 60px;
+}
+
+.fulltoast {
+  margin-bottom: 10px;
+  width: 100% ! IMPORTANT;
+  max-width: 100%;
+}
+
+.Banner-table {
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top:40px;
+  text-align: center;
+  height: 250px;
+}
+
+span.like-icon {
+  font-size: 80px;
+  display: block;
+  margin-top: 40px;
+}
+
+.update-edit-info {
+  width: 100% !IMPORTANT;
+  max-width: 100% !IMPORTANT;
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content-timeline {
+  position: relative;
+}
+
+.timeline-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+strong.modal-title-view {
+  display: flex !important;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #0e7490 ! IMPORTANT;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+  margin-bottom: -10px !IMPORTANT;
+}
+
+.modal-title-top {
+  font-size: 14px;
+  color:#666;
+}
+
+span.description-span {
+  display: block;
+}
+
+.topup {
+  margin-left: 5px;
+}
+
+
+.heading-blog-flex {
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+  }
+
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+article.blog-post-parent {
+  width: 32%;
+  padding: 10px;
+  border: 1px solid #0080a41f;
+  border-radius: 10px;
+  border-bottom: 4px solid #0e7490;
+  margin-bottom:5px !important;
+  position: relative;
+}
+
+.blog-post-parent .btn-cont {
+  margin-top: 20px;
+  margin-bottom:12px
+}
+
+.blog-post-parent span.title {
+  font-size: 20px;
+}
+
+.blog-post-parent .desc {
+  padding-top: 10px;
+  font-size:14px;
+}
+
+.btn-cont {
+  display: flex;
+  gap: 10px;
+}
+
+.grid-blog-flex {
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.btn-cont-tbl {
+  display: flex;
+  gap: 10px;
+}
+
+.category span {
+  background: #f1f1f1;
+  padding: 3px;
+  font-size: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #daf7ff;
+}
+
+.text-center h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+button.btn-remove-elem:hover {
+  background: #000;
+}
+
+span.btn-remove-cont {
+  position: absolute;
+  right: -1px;
+  top: -5px;
+}
+button.btn-remove-elem {
+  width: 22px;
+  height: 22px;
+  background: #8b8b8b;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.btn-href a{
+  display: flex !important;
+  gap:0px;
+}
